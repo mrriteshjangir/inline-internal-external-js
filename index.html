@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JS</title>
+</head>
+<body onload="alert('hiii')">
+    <!-- Inline JS -->
+    <button onclick="alert('Hi Im button')">Inline JS</button>
+
+    <!-- Internal JS -->
+    <button onclick="alertBox1()">Internal JS</button>
+    <script>
+        function alertBox1(){
+            alert("I'm Internal JS");
+        }
+    </script>
+
+    <!-- External JS -->
+    <button onclick="alertBox2()">External JS</button>
+    <script src="./script.js"></script>
+</body>
+</html>
